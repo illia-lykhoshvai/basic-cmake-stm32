@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.24.2)
 
 set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_LIST_DIR}/toolchain.cmake")
 
-project("basic-cmake-stm32")
+project("basic-cmake-stm32" C)
 
 set(CMAKE_C_STANDARD "11")
 
