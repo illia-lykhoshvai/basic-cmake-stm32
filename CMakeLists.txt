@@ -1,47 +1,58 @@
-PROJECT(stm32_basic)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.24.2)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 3.20)
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_LIST_DIR}/toolchain.cmake")
 
-SET(CMAKE_TOOLCHAIN_FILE stm32.cmake)
+project("basic-cmake-stm32")
 
-# Flash size
-SET(STM32_FLASH_SIZE "64K")
-# RAM size
-SET(STM32_RAM_SIZE "8K")
-# Stack address - bottom of RAM => RAM origin + RAM size
-SET(STM32_STACK_ADDRESS "0x20002000")
+set(CMAKE_C_STANDARD "11")
 
-# Origins
-SET(STM32_FLASH_ORIGN "0x08000000")
-SET(STM32_RAM_ORIGN "0x20000000")
+set(linker_script "${CMAKE_CURRENT_LIST_DIR}/STM32F051R8TX_FLASH.ld")
+set(device_name "stm32f0xx")
 
-# Compiler definitions
-ADD_DEFINITIONS( 
-  # Chip type 
-  -DSTM32F051x8  
+set(c_compile_options
+	# CPU specific
+	"-mcpu=cortex-m0"
+	"-mfloat-abi=soft"
+	"-mthumb"
+	# Non-CPU specific
+	"--specs=nano.specs"
+	"-ffunction-sections"
+	"-fdata-sections"
+	"-fstack-usage"
+	# Other options
+	"-g3"
+	"-c"
+	"-Os"
+	"-Wall"
 )
+	
+set(compile_definitions "${device_name}")
+if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+	list(APPEND compile_definitions "DEBUG" "_DEBUG")
+else()
+	list(APPEND compile_definitions "NDEBUG")
+endif()
 
-# Set chip type
-SET(STARTUP_SOURCE ${STM32_STARTUP_FILE})
-
-# Project sources
-SET(PROJECT_SOURCES
-  main.c
+set(link_flags
+	"-mcpu=cortex-m0plus \
+	-mfloat-abi=soft \
+	-T\"${CMAKE_CURRENT_LIST_DIR}/STM32F051R8TX_FLASH.ld\" \
+	-Wl,-Map=\"${PROJECT_NAME}.map\" \
+	-Wl,--gc-sections \
+	-static \
+	--specs=nano.specs \
+	-Wl,--start-group -lc -lm -Wl,--end-group"
 )
+add_compile_options("${c_compile_options}")
+add_compile_definitions("${compile_definitions}")
 
-SET(COMPILE_DEFINITIONS_DEBUG -O0 -g3 -DDEBUG)
-SET(COMPILE_DEFINITIONS_RELEASE -Os)
+file(GLOB_RECURSE sources "Src/*.[c|h]")
+add_executable("${PROJECT_NAME}" ${sources})
+set_target_properties("${PROJECT_NAME}" PROPERTIES LINK_FLAGS "${link_flags}")
 
-CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/STM32F051R8TX_FLASH.ld.in ${CMAKE_CURRENT_BINARY_DIR}/STM32F051R8TX_FLASH.ld)
-SET(CMAKE_EXE_LINKER_FLAGS "-T${CMAKE_CURRENT_BINARY_DIR}/STM32F051R8TX_FLASH.ld ${CMAKE_EXE_LINKER_FLAGS}")
-
-INCLUDE_DIRECTORIES(
-  ${CMAKE_CURRENT_SOURCE_DIR}/Src
-  ${CMAKE_CURRENT_SOURCE_DIR}/Inc
-  ${STM32_StdPeriphLib_INCLUDE_DIRS}
+# The OBJCOPY utility will separate the EEPROM section from the main program
+add_custom_command(TARGET "${PROJECT_NAME}" POST_BUILD
+	COMMAND "${CMAKE_OBJCOPY}" ARGS -j .eeprom "$<TARGET_FILE:${PROJECT_NAME}>" -O ihex "eeprom.hex"
+	COMMAND "${CMAKE_OBJCOPY}" ARGS -R .eeprom "$<TARGET_FILE:${PROJECT_NAME}>" "program.elf"
+	BYPRODUCTS "eeprom.hex" "program.elf"
 )
-
-ADD_EXECUTABLE(${CMAKE_PROJECT_NAME}.elf ${PROJECT_SOURCES} ${MOD_SOURCES} ${STARTUP_SOURCE})
-
-ADD_CUSTOM_COMMAND(TARGET ${CMAKE_PROJECT_NAME}.elf POST_BUILD COMMAND ${CMAKE_OBJCOPY} ARGS -Oihex ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.hex)
-ADD_CUSTOM_COMMAND(TARGET ${CMAKE_PROJECT_NAME}.elf POST_BUILD COMMAND ${CMAKE_OBJCOPY} ARGS -Obinary ${CMAKE_PROJECT_NAME}.elf ${CMAKE_PROJECT_NAME}.bin)
