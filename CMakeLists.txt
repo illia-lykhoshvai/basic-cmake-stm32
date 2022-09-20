@@ -7,7 +7,7 @@ project("basic-cmake-stm32" C)
 set(CMAKE_C_STANDARD "11")
 
 set(linker_script "${CMAKE_CURRENT_LIST_DIR}/STM32F051R8TX_FLASH.ld")
-set(device_name "stm32f0xx")
+set(device_name "STM32F051x8")
 
 set(c_compile_options
 	# CPU specific
@@ -37,6 +37,7 @@ set(link_flags
 	"-mcpu=cortex-m0plus \
 	-mfloat-abi=soft \
 	-T\"${CMAKE_CURRENT_LIST_DIR}/STM32F051R8TX_FLASH.ld\" \
+	-Wl,-V \
 	-Wl,-Map=\"${PROJECT_NAME}.map\" \
 	-Wl,--gc-sections \
 	-static \
