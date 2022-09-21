@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.24.2)
 
 set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_LIST_DIR}/toolchain.cmake")
 
-project("basic-cmake-stm32" C)
+project("basic-cmake-stm32" C ASM)
 
 set(CMAKE_C_STANDARD "11")
 
@@ -47,8 +47,15 @@ set(link_flags
 add_compile_options("${c_compile_options}")
 add_compile_definitions("${compile_definitions}")
 
-file(GLOB_RECURSE sources "Src/*.[c|h]")
-add_executable("${PROJECT_NAME}" ${sources})
+include_directories("CMSIS/Inc/")
+include_directories("CMSIS/Src/")
+include_directories("Inc/")
+
+include_directories("Startup/")
+file (GLOB_RECURSE startup "Startup/*.[s]")
+
+file(GLOB_RECURSE sources "Src/*.[c]")
+add_executable("${PROJECT_NAME}" ${startup} ${sources})
 set_target_properties("${PROJECT_NAME}" PROPERTIES LINK_FLAGS "${link_flags}")
 
 # The OBJCOPY utility will separate the EEPROM section from the main program

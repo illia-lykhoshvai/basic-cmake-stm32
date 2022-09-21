@@ -1,0 +1,147 @@
+The target system is: Generic -  - 
+The host system is: Windows - 10.0.19044 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "C:/pets/basic-cmake-stm32/Build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-none-eabi-gcc.exe (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/pets/basic-cmake-stm32/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/software/MinGW/bin/make.exe -f Makefile cmTC_fc700/fast && C:/software/MinGW/bin/make.exe  -f CMakeFiles/cmTC_fc700.dir/build.make CMakeFiles/cmTC_fc700.dir/build
+make.exe[1]: Entering directory 'C:/pets/basic-cmake-stm32/Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj
+"C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-gcc.exe"   -v -o CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj -c C:/software/CMake/share/cmake-3.24/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-gcc.exe
+Target: arm-none-eabi
+Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --host=i686-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)' --with-bugurl=https://bugs.linaro.org/
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_fc700.dir/'
+ c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../libexec/gcc/arm-none-eabi/12.2.0/cc1.exe -quiet -v -iprefix c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/ -isysroot c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/software/CMake/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fc700.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\Users\75BD~1\AppData\Local\Temp\ccv31ZD0.s
+GNU C17 (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) version 12.2.0 (arm-none-eabi)
+	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/../../lib/gcc/arm-none-eabi/12.2.0/include"
+ignoring nonexistent directory "c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/12.2.0/../../../../include"
+ignoring duplicate directory "c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/../../lib/gcc/arm-none-eabi/12.2.0/include-fixed"
+ignoring duplicate directory "c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/../../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/include
+ c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/include-fixed
+ c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/include
+End of search list.
+GNU C17 (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) version 12.2.0 (arm-none-eabi)
+	compiled by GNU C version 9.3-win32 20200320, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 15bd107dc2bfd90eae4803c838ce7c69
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_fc700.dir/'
+ c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj C:\Users\75BD~1\AppData\Local\Temp\ccv31ZD0.s
+GNU assembler version 2.39.50 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) 2.39.50.20220821
+COMPILER_PATH=c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../libexec/gcc/arm-none-eabi/12.2.0/;c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../libexec/gcc/;c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/;c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/;c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/;c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.'
+Linking C static library libcmTC_fc700.a
+C:/software/CMake/bin/cmake.exe -P CMakeFiles/cmTC_fc700.dir/cmake_clean_target.cmake
+C:/software/CMake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_fc700.dir/link.txt --verbose=1
+"C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-ar.exe" qc libcmTC_fc700.a CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj
+"C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-ranlib.exe" libcmTC_fc700.a
+make.exe[1]: Leaving directory 'C:/pets/basic-cmake-stm32/Build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/include]
+    add: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/include-fixed]
+    add: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/include] ==> [C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/arm-none-eabi/12.2.0/include]
+  collapse include dir [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/include-fixed] ==> [C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/arm-none-eabi/12.2.0/include-fixed]
+  collapse include dir [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/include] ==> [C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/arm-none-eabi/include]
+  implicit include dirs: [C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/arm-none-eabi/12.2.0/include;C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/arm-none-eabi/12.2.0/include-fixed;C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/arm-none-eabi/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/pets/basic-cmake-stm32/Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/software/MinGW/bin/make.exe -f Makefile cmTC_fc700/fast && C:/software/MinGW/bin/make.exe  -f CMakeFiles/cmTC_fc700.dir/build.make CMakeFiles/cmTC_fc700.dir/build]
+  ignore line: [make.exe[1]: Entering directory 'C:/pets/basic-cmake-stm32/Build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-gcc.exe"   -v -o CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj -c C:/software/CMake/share/cmake-3.24/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-gcc.exe]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/src/gcc/configure --target=arm-none-eabi --prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/install --with-gmp=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --with-mpfr=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --with-mpc=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --with-isl=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-libiconv-prefix=/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/host-tools --host=i686-w64-mingw32 --with-pkgversion='Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)' --with-bugurl=https://bugs.linaro.org/]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_fc700.dir/']
+  ignore line: [ c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../libexec/gcc/arm-none-eabi/12.2.0/cc1.exe -quiet -v -iprefix c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/ -isysroot c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../arm-none-eabi -D__USES_INITFINI__ C:/software/CMake/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_fc700.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o C:\Users\75BD~1\AppData\Local\Temp\ccv31ZD0.s]
+  ignore line: [GNU C17 (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) version 12.2.0 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 9.3-win32 20200320  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/../../lib/gcc/arm-none-eabi/12.2.0/include"]
+  ignore line: [ignoring nonexistent directory "c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../arm-none-eabi/data/jenkins/workspace/GNU-toolchain/arm-12-mpacbti/build-mingw-arm-none-eabi/install/lib/gcc/arm-none-eabi/12.2.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/../../lib/gcc/arm-none-eabi/12.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/lib/gcc/../../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring nonexistent directory "c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../arm-none-eabi/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/include]
+  ignore line: [ c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/include-fixed]
+  ignore line: [ c:\program files (x86)\arm gnu toolchain arm-none-eabi\12.2 mpacbti-bet1\bin\../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) version 12.2.0 (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 9.3-win32 20200320  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 15bd107dc2bfd90eae4803c838ce7c69]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_fc700.dir/']
+  ignore line: [ c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj C:\Users\75BD~1\AppData\Local\Temp\ccv31ZD0.s]
+  ignore line: [GNU assembler version 2.39.50 (arm-none-eabi) using BFD version (Arm GNU Toolchain 12.2.MPACBTI-Bet1 (Build arm-12-mpacbti.16)) 2.39.50.20220821]
+  ignore line: [COMPILER_PATH=c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../libexec/gcc/arm-none-eabi/12.2.0/]
+  ignore line: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../libexec/gcc/]
+  ignore line: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/]
+  ignore line: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/]
+  ignore line: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/]
+  ignore line: [c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C static library libcmTC_fc700.a]
+  ignore line: [C:/software/CMake/bin/cmake.exe -P CMakeFiles/cmTC_fc700.dir/cmake_clean_target.cmake]
+  ignore line: [C:/software/CMake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_fc700.dir/link.txt --verbose=1]
+  ignore line: ["C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-ar.exe" qc libcmTC_fc700.a CMakeFiles/cmTC_fc700.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-bet1/bin/arm-none-eabi-ranlib.exe" libcmTC_fc700.a]
+  ignore line: [make.exe[1]: Leaving directory 'C:/pets/basic-cmake-stm32/Build/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+

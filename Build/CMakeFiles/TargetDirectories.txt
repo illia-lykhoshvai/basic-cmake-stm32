@@ -1,0 +1,3 @@
+C:/pets/basic-cmake-stm32/Build/CMakeFiles/basic-cmake-stm32.dir
+C:/pets/basic-cmake-stm32/Build/CMakeFiles/edit_cache.dir
+C:/pets/basic-cmake-stm32/Build/CMakeFiles/rebuild_cache.dir
